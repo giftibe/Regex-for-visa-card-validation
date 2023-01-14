@@ -60,8 +60,8 @@ Else, have nodejs install on your computer, fork repository and run `npm install
           let pattern = /^4[0-9]{12}(?:[0-9]{3})?$/
           
 
-- From the pattern ^, we begin by telling the parser to find the beginning of the string and must start with 4
-- Next, we also want a series of 12 numbers between the range of 0 t0 9 attached to the 4, totaling 13 digits.
+- From the character ^, we begin by telling the parser to find the beginning of the string and must start with 4
+- Next, we also want a series of 12 numbers {12} between the range of 0 t0 9 [0-9] attached to the 4, totaling 13 digits.
 - The bracket () is used for grouping and the program considers it as a single item when executing and hence interpreting that it is allowed/optional to add numbers ranging from 0 to 9, three times {3}.
 - The question market symbol states that the nearest pattern/group "(?:[0-9]{3})" to its left is optional , or it can occur zero or one time; hence the grouped item is regarded optional.
 - The square bracket [0-9] matches numbers ranging from 0 to 9. Note the hypen is used to represent "range".
