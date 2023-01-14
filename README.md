@@ -18,7 +18,7 @@ RULES OF VISA CARD VALIDATION
 
 ## Technologies Used
 - node - version 18.12.1
-- prompt-sync - version 2.0
+- prompt-sync - version 2.0 (for executing prompt() on vscode terminal)
   
 
 
