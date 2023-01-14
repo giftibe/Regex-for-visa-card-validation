@@ -35,9 +35,6 @@ Else, have nodejs install on your computer, fork repository and run `npm install
 - Enter your visa card number on prompting
 
 
-
-➜
-
 ## sample output
 
           regex:(main) ✗ node regex.js
@@ -63,9 +60,9 @@ Else, have nodejs install on your computer, fork repository and run `npm install
 - From the character ^, we begin by telling the parser to find the beginning of the string and must start with 4
 - Next, we also want a series of 12 numbers {12} between the range of 0 t0 9 [0-9] attached to the 4, totaling 13 digits.
 - The bracket () is used for grouping and the program considers it as a single item when executing and hence interpreting that it is allowed/optional to add numbers ranging from 0 to 9, three times {3}.
-- The question market symbol states that the nearest pattern/group "(?:[0-9]{3})" to its left is optional , or it can occur zero or one time; hence the grouped item is regarded optional.
+- The question market symbol states that the nearest pattern/group "(?:[0-9]{3})" to its left is optional, or it can occur zero or one time; hence the grouped item is regarded optional.
 - The square bracket [0-9] matches numbers ranging from 0 to 9. Note the hypen is used to represent "range".
-- The ?: signals that it is passive (non-capturing) group, Matches "[0-9]{3}" but does not remember the match. Hence, the matched substring cannot be recalled from the resulting array's elements or from the predefined RegExp object's properties
+- The ?: character signals that it is passive (non-capturing) group, Matches "[0-9]{3}" but does not remember the match. Hence, the matched substring cannot be recalled from the resulting array's elements or from the predefined RegExp object's properties
 - The $ represents the ending of the string
 - The forward slash // character is used to denote the boundaries of the regular expression
 
