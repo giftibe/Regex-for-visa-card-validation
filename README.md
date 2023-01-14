@@ -36,6 +36,39 @@ Else, have nodejs install on your computer, fork repository and run `npm install
 
 
 
+➜
+
+## sample output
+
+          regex:(main) ✗ node regex.js
+          Enter the 13 or 16 digits of your visa card number: 1234567890123
+          1234567890123 is NOT a valid visa card number
+          
+          regex:(main) ✗ node regex.js
+          Enter the 13 or 16 digits of your visa card number: 42345abc90123
+          42345abc90123 is NOT a valid visa card number
+          
+          regex:(main) ✗ node regex.js
+          Enter the 13 or 16 digits of your visa card number: 4123096582931
+          These digits (4123096582931): is a VALID Visa card number of length result 13 
+          
+          regex:(main) ✗ node regex.js
+          Enter the 13 or 16 digits of your visa card number: 4854784504897809
+          These digits (4854784504897809): is a VALID Visa card number of length result 16 
+
+## Explanation
+          let pattern = /^4[0-9]{12}(?:[0-9]{3})?$/
+          
+
+- From the pattern ^, we begin by telling the parser to find the beginning of the string and must start with 4
+- Next, we also want a series of 12 numbers between the range of 0 t0 9 attached to the 4, totaling 13 digits.
+- The bracket () is used for grouping and the program considers it as a single item when executing and hence interpreting that it is allowed/optional to add numbers ranging from 0 to 9, three times {3}.
+- The question market symbol states that the nearest pattern/group "(?:[0-9]{3})" to its left is optional , or it can occur zero or one time; hence the grouped item is regarded optional.
+- The square bracket [0-9] matches numbers ranging from 0 to 9. Note the hypen is used to represent "range".
+- The ?: signals that it is passive (non-capturing) group, Matches "[0-9]{3}" but does not remember the match. Hence, the matched substring cannot be recalled from the resulting array's elements or from the predefined RegExp object's properties
+- The $ represents the ending of the string
+- The forward slash // character is used to denote the boundaries of the regular expression
+
 
 
 ## Contact
