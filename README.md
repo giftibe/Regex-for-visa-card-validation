@@ -21,17 +21,13 @@ RULES OF VISA CARD VALIDATION
 - prompt-sync - version 2.0
   
 
-## Screenshots
-![Example screenshot](/screenshot regex.JPG)
-<!-- If you have screenshots you'd like to share, include them here. -->
-
 
 ## Setup
 - install node on your computer using 
   `npm install node` or refer to node website https://nodejs.org/
 - install prompt-sync as a dependency using
   `npm install prompt-sync` if you decide to copy the code.
-Else, have nodejs install on your computer, fork repository and run `npm install`
+Else, have nodejs install on your computer, fork repository and run `npm install` to download dependencies
 
 ## Usage
 - To run the code, cd to regex.js and run
